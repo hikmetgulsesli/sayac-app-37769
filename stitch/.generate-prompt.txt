@@ -1,0 +1,148 @@
+# sayac-app-37769 — Ürün Gereksinim Dokümanı (PRD)
+
+## 1. Proje Genel Bakışı
+
+- **Proje Adı:** sayac-app-37769
+- **Proje Türü:** Basit Tek Sayfa Uygulaması (SPA)
+- **Platform:** Web (React 18 + Vite + Tailwind)
+- **Çekirdek İşlev:** Kullanıcının sayısal bir sayacı artırma, azaltma ve sıfırlama ile kontrol edebildiği minimal bir sayac uygulaması.
+- **Hedef Kullanıcı:** Herhangi bir yaş grubundan günlük kullanıcı.
+
+---
+
+## 2. Hedefler
+
+1. Kullanıcı sayac değerini kolayca artırabilmeli.
+2. Kullanıcı sayac değerini azaltabilmeli.
+3. Kullanıcı sayacı sıfırlayabilmeli.
+4. Sayac değeri görsel olarak net ve okunaklı biçimde sunulmalı.
+5. Uygulama tarayıcıda anında yüklenmeli ve tepki vermeli.
+
+---
+
+## 3. Teknik Gereksinimler
+
+- **Framework:** React 18 (functional components + hooks)
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **State Yönetimi:** React useState (yerel state, harici kütüphane gerektirmez)
+- **Bağımlılıklar:** react, react-dom, vite, @vitejs/plugin-react, tailwindcss, autoprefixer, postcss
+- **Ek Dosyalar:** postcss.config.js, tailwind.config.js, vite.config.js, index.html
+- **Geliştirme Sunucusu:** Vite dev server, hot module replacement aktif
+
+---
+
+## 4. Fonksiyonel Gereksinimler
+
+### 4.1 Sayac Görünümü
+- Sayac değeri büyük ve merkezi bir şekilde sayfanın ortasında gösterilir.
+- Sayac değeri tam sayı formatında sunulur.
+
+### 4.2 Artır Butonu
+- Sayac değerini 1 (bir) artırır.
+- Her tıklamada tetiklenir.
+
+### 4.3 Azalt Butonu
+- Sayac değerini 1 (bir) azaltır.
+- Negatif değerlere izin verilir (aşağı sınır yok).
+- Her tıklamada tetiklenir.
+
+### 4.4 Sıfırla Butonu
+- Sayac değerini 0 (sıfır) olarak ayarlar.
+- Onay gerektirmez (doğrudan sıfırlar).
+
+### 4.5 Sayac Geçmişi (opsiyonel, v1'de yok)
+- Takip edilmiyor.
+
+---
+
+## 5. UI/UX Gereksinimleri
+
+### 5.1 Sayfa Düzeni
+- Sayfa tek kolonlu, dikey düzende.
+- Sayac değeri üstte, butonlar altında yer alır.
+- Sayac değeri büyük puntolu başlık olarak gösterilir (örn. 96px ve üzeri).
+
+### 5.2 Renk Paleti
+- Arka plan: açık gri (#F3F4F6)
+- Sayac değeri: koyu gri (#1F2937)
+- Artır butonu: yeşil (#10B981)
+- Azalt butonu: kırmızı (#EF4444)
+- Sıfırla butonu: gri (#6B7280)
+- Butonlar: yuvarlak köşeli, büyük dokunma alanı
+
+### 5.3 Tipografi
+- Sayac değeri: bold, büyük boyut
+- Buton etiketleri: büyük harf, bold
+
+### 5.4 Etkileşim Durumları
+- Butonlarda hover efekti
+- Aktif/pressed durumu
+- Focus ring (erişilebilirlik)
+
+### 5.5 Animasyonlar
+- Buton tıklamasında scale efekti (tercih edilir)
+- Sayac değeri değiştiğinde hafif geçiş animasyonu
+
+---
+
+## 6. Uyumluluk ve Taşınabilirlik
+
+- Tüm modern tarayıcılar (Chrome, Firefox, Safari, Edge)
+- Mobil responsive tasarım
+- Keyboard erişilebilirliği (tab, enter, space)
+
+---
+
+## 7. Proje Klasör Yapısı
+
+```
+sayac-app-37769/
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── src/
+│   ├── main.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── components/
+│       └── Counter.jsx
+```
+
+---
+
+## 8. Ekranlar (Screens)
+
+| # | Ekran Adı | Tür | Açıklama |
+|---|-----------|-----|----------|
+| 1 | Ana Sayfa | tek-sayfa | Sayac değeri, artır/azalt/sıfırla butonları |
+| 2 | Hata Sayfası | error-page | 404 veya uygulama hata durumu |
+| 3 | Boş Durum | empty-state | Başlangıçta sayac sıfır gösterimi |
+
+---
+
+## 9. Doğrulama Kriterleri (Acceptance Criteria)
+
+- [ ] Sayfa yüklendiğinde sayac varsayılan olarak 0 gösterir.
+- [ ] Artır butonuna basıldığında değer 1 artar.
+- [ ] Azalt butonuna basıldığında değer 1 azalır.
+- [ ] Sıfırla butonuna basıldığında değer 0 olur.
+- [ ] Negatif sayılara izin verilir.
+- [ ] Butonlar mobil cihazlarda rahat tıklanabilir boyuttadır.
+- [ ] Uygulama 1 saniyeden kısa sürede yüklenir.
+- [ ] Tailwind CSS ile stil uygulanmıştır.
+- [ ] Vite ile geliştirme sunucusu çalışır.
+- [ ] production build başarılı oluşturulur.
+
+Generate a SEPARATE screen design for EVERY page, view, modal, dialog, tab panel, and settings screen described in this PRD. Do NOT skip ANY screen — even if it seems minor.
+
+MANDATORY SCREENS:
+- If the PRD mentions "settings" or "ayarlar" → generate a Settings screen
+- If the PRD mentions tabs or bottom navigation → generate EACH tab view as a separate screen
+- If the PRD mentions modals (statistics, help, share, confirmation) → generate each as a separate screen
+- If the PRD mentions error states, empty states, loading states → generate those too
+- Generate at least as many screens as there are distinct views/pages/modals in the PRD
+
+All visible text must be in Turkish. Use a dark, modern theme.
