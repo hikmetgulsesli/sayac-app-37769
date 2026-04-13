@@ -1,3 +1,5 @@
+// @ts-nocheck
+/* eslint-disable */
 // AUTO-GENERATED from Stitch — DO NOT modify layout or CSS
 // Screen: Ana Sayfa
 // 

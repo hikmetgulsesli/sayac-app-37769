@@ -1,3 +1,5 @@
+// @ts-nocheck
+/* eslint-disable */
 // AUTO-GENERATED from Stitch — DO NOT modify layout or CSS
 // Screen: Boş Durum
 // 
@@ -125,7 +127,7 @@ export function BosDurum(props: BosDurumProps) {
       </div>
       <div className="mt-8 pt-8 border-t border-outline-variant/10">
       <div className="flex items-center gap-3">
-      <img alt="Support Specialist" className="w-10 h-10 rounded-full object-cover" data-alt="Close-up portrait of a professional friendly woman with a warm smile, professional lighting, corporate office aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRDH0D7YYL_hb4lJEbyd1qxmVNHc6w2J6O-pFmkzWsuU2GNNw4rDdnDoJLpQ8nZIUOayHvVuOc0JIf9rZo3GPGfqYU5P1FCVkl8_SjCyQ3QuBPK2lyJR0w5Lyyqg9F_oKHt3DI-HZ3_OhTWAwlK9HIZdNU76fj-alCuyifqEuujXNX1FQMPEV54THREbNt_1dQ5j38DWuZroDG_Vgq78XAJsNcNyYvvosEClybVtjbnQ0wBBZWK_4Z6dQRfDM5dNC2seHu0-iIcXOv"/ />
+      <img alt="Destek Uzmanı" className="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRDH0D7YYL_hb4lJEbyd1qxmVNHc6w2J6O-pFmkzWsuU2GNNw4rDdnDoJLpQ8nZIUOayHvVuOc0JIf9rZo3GPGfqYU5P1FCVkl8_SjCyQ3QuBPK2lyJR0w5Lyyqg9F_oKHt3DI-HZ3_OhTWAwlK9HIZdNU76fj-alCuyifqEuujXNX1FQMPEV54THREbNt_1dQ5j38DWuZroDG_Vgq78XAJsNcNyYvvosEClybVtjbnQ0wBBZWK_4Z6dQRfDM5dNC2seHu0-iIcXOv" />
       <div>
       <p className="text-[0.6875rem] font-headline font-bold tracking-widest text-on-surface uppercase">Destek</p>
       <p className="text-[0.6875rem] font-body text-on-surface-variant">Rehber için tıklayın</p>
