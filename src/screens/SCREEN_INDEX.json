@@ -1,0 +1,29 @@
+[
+  {
+    "screenId": "528e6ecdc61a45c980947076310067e7",
+    "title": "Boş Durum",
+    "componentName": "BosDurum",
+    "file": "src/screens/BosDurum.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 8
+  },
+  {
+    "screenId": "cbbbec95e6f848519711f3907569a748",
+    "title": "Ana Sayfa",
+    "componentName": "AnaSayfa",
+    "file": "src/screens/AnaSayfa.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 8
+  },
+  {
+    "screenId": "c5b1054c718c4fbd8db2cda1b2d88fe3",
+    "title": "Hata Sayfası",
+    "componentName": "HataSayfasi",
+    "file": "src/screens/HataSayfasi.tsx",
+    "buttons": 1,
+    "inputs": 0,
+    "links": 1
+  }
+]
